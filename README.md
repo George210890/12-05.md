@@ -30,4 +30,4 @@ group by p.customer_id;
                     -> Index range scan on p using pay_date over ('2005-07-30 00:00:00' <= payment_date < '2005-07-31 00:00:00'), with index condition: ((p.payment_date >= TIMESTAMP'2005-07-30 00:00:00') and (p.payment_date < <cache>(('2005-07-30' + interval 1 day))))  (cost=286 rows=634) (actual time=0.072..4.84 rows=634 loops=1)
                     -> Single-row index lookup on c using PRIMARY (customer_id=p.customer_id)  (cost=0.25 rows=1) (actual time=0.00191..0.00195 rows=1 loops=634)
 
-![sql_indexes_hw_task2](https://github.com/EvgenyMyznikov/sql_indexes_hw/blob/main/img/Task2.png?raw=true)
+![sql_indexes_hw_task2](https://github.com/George210890/12-05.md/blob/main/Screenshot_1.png)
